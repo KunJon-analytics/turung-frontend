@@ -24,11 +24,6 @@ const architects_daughter = Architects_Daughter({
   display: "swap",
 });
 
-export const metadata = {
-  title: "Turung",
-  description: " The future of E-commerce is now!!!",
-};
-
 export default function RootLayout({
   children,
 }: {
