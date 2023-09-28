@@ -15,7 +15,7 @@ export async function sendMail(
 
   let mailOptions = {
     from: process.env.NODEMAILER_EMAIL,
-    to: process.env.NODEMAILER_EMAIL,
+    to: process.env.TURUNG_EMAIL,
     subject: `Contact Message from ${fullname}`,
     text: `${body} Email: ${fromEmail}`,
   };
