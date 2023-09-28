@@ -8,8 +8,8 @@ import bodamImage from "@/public/images/bodam.jpg";
 
 const Team = () => {
   return (
-    <section className="flex my-40 items-center xl:h-screen max-w-6xl mx-auto px-4 sm:px-6">
-      <div className="justify-center flex-1 px-4 py-12 md:py-20 mx-auto max-w-7xl md:px-6">
+    <section className="flex items-center xl:h-screen max-w-6xl mx-auto px-4 sm:px-6">
+      <div className="justify-center flex-1 px-4 pt-12 md:pt-20 mx-auto max-w-7xl md:px-6">
         <div className="text-center mb-14">
           <span className="block mb-4 text-xs font-semibold leading-4 tracking-widest text-center text-primary uppercase">
             Team

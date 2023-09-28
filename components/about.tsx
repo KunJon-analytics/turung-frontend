@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="py-12 md:py-20">
+        <div className="pt-12 md:pt-20">
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center ">
             <h2 className="h2 mb-4">About Turung & TURUPay</h2>

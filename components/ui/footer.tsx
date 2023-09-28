@@ -7,7 +7,7 @@ import logo from "@/public/images/logo.svg";
 export default function Footer() {
   return (
     <footer>
-      <div className="py-12 md:py-16">
+      <div className="pb-12 md:pb-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           {/* Top area: Blocks */}
           <div className="grid md:grid-cols-12 gap-8 lg:gap-20 mb-8 md:mb-12">

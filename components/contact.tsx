@@ -4,7 +4,7 @@ import { FaTwitter } from "react-icons/fa";
 const Contact = () => {
   return (
     <section className="flex items-center bg-gradient-to-r from-base-100 to-base-100 xl:h-screen ">
-      <div className="justify-center flex-1 max-w-6xl px-4 py-4 mx-auto lg:py-10 md:px-7">
+      <div className="justify-center flex-1 max-w-6xl px-4 pt-4 mx-auto lg:pt-10 md:px-7">
         <div className="flex flex-wrap items-center justify-center -mx-4">
           <div className="w-full px-4 lg:w-1/2">
             <div className="max-w-sm mx-auto ">
