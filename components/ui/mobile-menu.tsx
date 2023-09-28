@@ -93,20 +93,12 @@ export default function MobileMenu() {
           </li>
           <li>
             <Link
-              href="/"
+              target="_blank"
+              href="https://t.me/turungcommunity"
               className="flex font-medium w-full py-2 justify-center"
               onClick={() => setMobileNavOpen(false)}
             >
               Contact
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/"
-              className="flex font-medium w-full py-2 justify-center"
-              onClick={() => setMobileNavOpen(false)}
-            >
-              Support
             </Link>
           </li>
         </ul>

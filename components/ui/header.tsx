@@ -43,18 +43,11 @@ export default function Header() {
               </li>
               <li>
                 <Link
-                  href="/"
+                  href="https://t.me/turungcommunity"
+                  target="_blank"
                   className="font-medium px-4 py-3 flex items-center transition duration-150 ease-in-out"
                 >
                   Contact
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/"
-                  className="font-medium px-4 py-3 flex items-center transition duration-150 ease-in-out"
-                >
-                  Support
                 </Link>
               </li>
             </ul>
