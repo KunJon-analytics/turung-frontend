@@ -1,10 +1,6 @@
 import nodemailer from "nodemailer";
 
-export async function sendMail(
-  fullname: string,
-  fromEmail: string,
-  body: string
-) {
+export async function sendMail(subject: string, body: string) {
   let transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
@@ -16,8 +12,8 @@ export async function sendMail(
   let mailOptions = {
     from: process.env.NODEMAILER_EMAIL,
     to: process.env.TURUNG_EMAIL,
-    subject: `Contact Message from ${fullname}`,
-    text: `${body} Email: ${fromEmail}`,
+    subject,
+    text: body,
   };
 
   await new Promise((resolve, reject) => {

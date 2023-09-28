@@ -1,3 +1,5 @@
+import CTAForm from "./cta-form";
+
 export default function Hero() {
   return (
     <section>
@@ -55,17 +57,7 @@ export default function Hero() {
             </p>
             <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
               <div data-aos="fade-up" data-aos-delay="400">
-                {/* CTA form */}
-                <div className="bg-gray-100 text-xs rounded-3xl border border-gray-200 flex items-center justify-between">
-                  <input
-                    type="text"
-                    placeholder="Enter your email to join whitelist"
-                    className="bg-transparent border-none focus:border-none py-1 text-gray-600 px-4 focus:outline-none w-full"
-                  />{" "}
-                  <button className="py-2 px-4 bg-primary text-primary-content rounded-r-3xl hover:bg-primary-focus inline-flex items-center focus:outline-none">
-                    Join TXPR whitelist
-                  </button>
-                </div>
+                <CTAForm />
               </div>
             </div>
           </div>
