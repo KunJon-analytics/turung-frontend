@@ -4,7 +4,7 @@ import { FaBomb, FaCoins, FaHandshake, FaRocket } from "react-icons/fa";
 
 const Timeline = () => {
   return (
-    <section className="items-center">
+    <section className="items-center md:mt-80">
       <div className="justify-center max-w-6xl px-4 py-4 mx-auto lg:py-8 md:px-6">
         <div className="max-w-xl mx-auto">
           <div className="text-center ">

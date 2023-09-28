@@ -14,7 +14,7 @@ const Community = () => {
   return (
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="pt-12 md:pt-20 border-t border-gray-800">
+        <div className="pt-12 md:pt-20 md:mb-40 border-t border-gray-800">
           {/* Items */}
           <div className="grid gap-20">
             {/* 1st item */}
