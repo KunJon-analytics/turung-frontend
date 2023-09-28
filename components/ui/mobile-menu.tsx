@@ -82,7 +82,9 @@ export default function MobileMenu() {
           </li>
           <li>
             <Link
-              href="/"
+              href="/docs/whitepaper.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex font-medium w-full py-2 justify-center"
               onClick={() => setMobileNavOpen(false)}
             >
