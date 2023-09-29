@@ -7,6 +7,7 @@ import kueImage from "@/public/images/kue.jpg";
 import bodamImage from "@/public/images/bodam.jpg";
 import yewandeImage from "@/public/images/yewande.jpg";
 import prodigyImage from "@/public/images/prodigy.jpg";
+import johnImage from "@/public/images/john.jpg";
 
 const Team = () => {
   return (
@@ -25,12 +26,28 @@ const Team = () => {
             linkedin="https://www.linkedin.com/in/shinkut-bognet-4a593659"
             role="Founder"
           />
+
           <TeamMember
             image={bodamImage}
             name="Bodam Bognet"
             linkedin="https://www.linkedin.com/in/bodam-bognet-0181369b"
             role="Chief Operating Officer"
           />
+
+          <TeamMember
+            image={yewandeImage}
+            linkedin="https://www.linkedin.com/in/temitope-yewande-abiodun/"
+            name="Temitope Abiodun"
+            role="Head Marketing & Communication"
+          />
+
+          <TeamMember
+            image={johnImage}
+            name="John Adelakun"
+            linkedin="https://www.linkedin.com/in/john-adelakun-chichebem/"
+            role="Full stack Blockchain dev (Snr)"
+          />
+
           <TeamMember
             image={kueImage}
             linkedin="https://www.linkedin.com/in/kue-barinor-paul-0793a3b3"
@@ -44,12 +61,7 @@ const Team = () => {
             name="Michael Andrew"
             role="Marketing Executive (offline)"
           />
-          <TeamMember
-            image={yewandeImage}
-            linkedin="https://www.linkedin.com/in/temitope-yewande-abiodun/"
-            name="Temitope Abiodun"
-            role="Head Marketing & Communication"
-          />
+
           <TeamMember
             image={prodigyImage}
             linkedin="https://www.linkedin.com/in/prodigydan/"
