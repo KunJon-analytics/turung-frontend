@@ -15,7 +15,7 @@ export default function Header() {
             {/* Logo */}
             <Link href="/" className="flex items-center" aria-label="Turupay">
               <Image src={logo} alt="logo" />
-              <p className="ml-2">Turupay</p>
+              <p className="ml-2">Turung</p>
             </Link>
           </div>
 
