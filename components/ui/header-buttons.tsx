@@ -39,7 +39,7 @@ const HeaderButtons = ({ listStyle, isMobile }: Props) => {
             setCurrentTheme("dark");
           }}
           className={
-            "fill-current bg-base-300 rounded-full w-7 h-7 " +
+            "fill-current text-primary bg-base-300 rounded-full w-7 h-7 " +
             (currentTheme === "light" ? "swap-on" : "hidden")
           }
         >
@@ -54,7 +54,7 @@ const HeaderButtons = ({ listStyle, isMobile }: Props) => {
             setCurrentTheme("light");
           }}
           className={
-            "fill-current bg-base-300 rounded-full w-7 h-7 " +
+            "fill-current text-primary bg-base-300 rounded-full w-7 h-7 " +
             (currentTheme === "dark" ? "swap-on" : "hidden")
           }
         >

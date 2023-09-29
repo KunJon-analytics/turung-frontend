@@ -33,12 +33,12 @@ const Community = () => {
                 data-aos="fade-right"
               >
                 <div className="md:pr-4 lg:pr-12 xl:pr-16">
-                  <h3 className="h2 mb-3">Join our community</h3>
+                  <h3 className="h2 mb-3 text-primary">Join our community</h3>
                   <p className="text-xl mb-4">
                     Join project community and be amongst the first to get a
                     free smartstore.
                   </p>
-                  <div className="flex text-purple-700">
+                  <div className="flex text-primary">
                     <Link
                       href={"https://twitter.com/turungcommunity"}
                       target="_blank"

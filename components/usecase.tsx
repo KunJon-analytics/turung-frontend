@@ -8,7 +8,9 @@ const Usecase = () => {
         <div className="pt-12 md:pt-20">
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2 mb-4">Our Usecases and Tokenomics</h2>
+            <h2 className="h2 mb-4 text-primary">
+              Our Usecases and Tokenomics
+            </h2>
             <p className="text-xl">
               We have mapped out a clear roadmap as well as an effective
               tokenomics

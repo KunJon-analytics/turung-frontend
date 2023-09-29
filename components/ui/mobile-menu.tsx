@@ -70,7 +70,7 @@ export default function MobileMenu() {
             : { maxHeight: 0, opacity: 0.8 }
         }
       >
-        <ul className="px-4 py-2">
+        <ul className="px-4 py-2 text-primary">
           <li>
             <Link
               href="/"

@@ -16,7 +16,7 @@ const Contact = () => {
           </div>
           <div className="max-w-2xl px-4 mb-16 lg:mb-0 lg:w-1/2 lg:mr-0 lg:ml-auto">
             <h2 className="mb-6 text-3xl font-bold">
-              Get In <span className="text-secondary">Touch</span>
+              Get In <span className="text-primary">Touch</span>
             </h2>
 
             <div className="flex mb-6">

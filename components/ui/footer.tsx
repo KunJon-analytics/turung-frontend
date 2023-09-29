@@ -4,9 +4,9 @@ import { FaLinkedin, FaTelegram, FaTwitter } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-base-100">
+    <footer className="bg-base-100 text-primary">
       <div className="mx-auto max-w-7xl py-8 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
-        <div className="mt-8 md:mb-8 flex justify-center space-x-6 md:order-3  ">
+        <div className="mt-8 md:mb-8 flex justify-center space-x-6 md:order-3">
           <Link
             href="https://t.me/turungcommunity"
             className=""
@@ -35,7 +35,7 @@ export default function Footer() {
           </Link>
         </div>
         <div className="mt-8  md:order-1 md:mt-0 ">
-          <p className="text-center">&copy; Turung. 2023.</p>
+          <p className="text-center text-base-content">&copy; Turung. 2023.</p>
         </div>
       </div>
     </footer>

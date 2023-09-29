@@ -45,11 +45,11 @@ export default function Hero() {
         <div className="relative pt-32 md:pt-40">
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h1 mb-4 italic " data-aos="fade-up">
+            <h1 className="h1 mb-4 italic text-primary" data-aos="fade-up">
               The future of E-commerce is now
             </h1>
             <p
-              className="text-xl text-secondary mb-8 tracking-widest"
+              className="text-xl mb-8 tracking-widest"
               data-aos="fade-up"
               data-aos-delay="200"
             >

@@ -32,28 +32,28 @@ const Timeline = () => {
             phase="1"
             body="TXPR token on Binance Smart Chain, Community and Team Building, token listing on exchanges."
             date="2013-10-03"
-            icon={<FaCoins className="w-4 h-4 text-secondary" />}
+            icon={<FaCoins className="w-4 h-4 text-primary-focus" />}
             title="Initialization"
           />
           <Phase
             phase="2"
             body="Smartstore (beta) launch, Reception feature launch, Registration/trademark and licensing, and Partnership with exchanges."
             date="2013-10-03"
-            icon={<FaRocket className="w-4 h-4 text-secondary" />}
+            icon={<FaRocket className="w-4 h-4 text-primary-focus" />}
             title="Product Launch"
           />
           <Phase
             phase="3"
             body="Partnerships with betting platforms, payment systems, sport/game clubs and Multi-Level Marketing (MLM) selling feature launch."
             date="2013-10-03"
-            icon={<FaHandshake className="w-4 h-4 text-secondary" />}
+            icon={<FaHandshake className="w-4 h-4 text-primary-focus" />}
             title="Partnerships and Marketing"
           />
           <Phase
             phase="4"
             body="Turung hardwares (POS + NFC + CARD), TURUNG pad feature, and Official sports sponsor."
             date="2013-10-03"
-            icon={<FaBomb className="w-4 h-4 text-secondary" />}
+            icon={<FaBomb className="w-4 h-4 text-primary-focus" />}
             title="Expansion"
           />
         </div>

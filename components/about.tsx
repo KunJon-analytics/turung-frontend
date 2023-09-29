@@ -7,7 +7,7 @@ const About = () => {
         <div className="pt-12 md:pt-20">
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center ">
-            <h2 className="h2 mb-4">About Turung & TURUPay</h2>
+            <h2 className="h2 mb-4 text-primary">About Turung & TURUPay</h2>
             <p className="text-xl">
               Over 80% of offline businesses don't have an online store. Turung
               will be empowering the next generation of businesses with digital

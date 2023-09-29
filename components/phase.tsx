@@ -20,7 +20,7 @@ const Phase = ({ phase, icon, date, title, body }: Props) => {
             {icon}
           </div>
         </div>
-        <div className="w-px h-full bg-secondary-focus"></div>
+        <div className="w-px h-full bg-primary"></div>
       </div>
       <div className="relative flex-1 mb-10 bg-base-300 rounded shadow lg:mb-8 ">
         <div className="absolute inline-block w-4 overflow-hidden -translate-y-1/2 top-7 -left-4">

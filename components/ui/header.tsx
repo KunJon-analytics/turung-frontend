@@ -15,14 +15,14 @@ export default function Header() {
             {/* Logo */}
             <Link href="/" className="flex items-center" aria-label="Turupay">
               <Image src={logo} alt="logo" />
-              <p className="ml-2">Turung</p>
+              <p className="ml-2 text-primary">Turung</p>
             </Link>
           </div>
 
           {/* Desktop navigation */}
           <nav className="hidden md:flex md:grow">
             {/* Desktop sign in links */}
-            <ul className="flex grow justify-end flex-wrap items-center">
+            <ul className="flex grow text-primary justify-end flex-wrap items-center">
               <li>
                 <Link
                   href="/"
