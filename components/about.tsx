@@ -9,11 +9,11 @@ const About = () => {
           <div className="max-w-3xl mx-auto text-center ">
             <h2 className="h2 mb-4">About Turung & TURUPay</h2>
             <p className="text-xl">
-              Over 80% of offline businesses don't have an online store, Turung
-              smart-store will be empowering the next generation of businesses
-              to sell online, accept crypto/fiat payments and also process
-              crypto-fiat liquidity through a decentralised payment system
-              called Turupay.
+              Over 80% of offline businesses don't have an online store. Turung
+              will be empowering the next generation of businesses with digital
+              smart stores to sell online, accept crypto/fiat payments, and also
+              process crypto-fiat liquidity through a decentralized payment
+              system called Turupay.
             </p>
             <p className="text-xl mt-1">
               TURUpay is a decentralised payment system that converts crypto

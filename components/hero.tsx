@@ -53,7 +53,7 @@ export default function Hero() {
               data-aos="fade-up"
               data-aos-delay="200"
             >
-              Make it possible!
+              The Crypto Commerce Solution
             </p>
             <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
               <div data-aos="fade-up" data-aos-delay="400">

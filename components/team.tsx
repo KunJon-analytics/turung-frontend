@@ -16,10 +16,7 @@ const Team = () => {
           <span className="block mb-4 text-xs font-semibold leading-4 tracking-widest text-center text-primary uppercase">
             Team
           </span>
-          <h1 className="text-3xl font-bold capitalize">
-            {" "}
-            Meet Our Wonderful Team{" "}
-          </h1>
+          <h1 className="text-3xl font-bold capitalize"> Meet Our Team </h1>
         </div>
         <div className="flex flex-wrap justify-center -mx-4">
           <TeamMember

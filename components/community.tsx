@@ -2,13 +2,8 @@ import React from "react";
 import Image from "next/image";
 
 import communityImage from "@/public/images/community.svg";
-import {
-  FaFacebook,
-  FaInstagram,
-  FaLinkedin,
-  FaTelegram,
-  FaTwitter,
-} from "react-icons/fa";
+import { FaLinkedin, FaTelegram, FaTwitter } from "react-icons/fa";
+import Link from "next/link";
 
 const Community = () => {
   return (
@@ -44,11 +39,21 @@ const Community = () => {
                     free smartstore.
                   </p>
                   <div className="flex text-purple-700">
-                    <FaFacebook className="h-10 w-10" />
-                    <FaTwitter className="h-10 w-10 ml-4" />
-                    <FaLinkedin className="h-10 w-10 ml-4" />
-                    <FaTelegram className="h-10 w-10 ml-4" />
-                    <FaInstagram className="h-10 w-10 ml-4" />
+                    <Link
+                      href={"https://twitter.com/turungcommunity"}
+                      target="_blank"
+                    >
+                      <FaTwitter className="h-10 w-10" />
+                    </Link>
+                    <Link
+                      href={"https://www.linkedin.com/company/turung"}
+                      target="_blank"
+                    >
+                      <FaLinkedin className="h-10 w-10 ml-4" />
+                    </Link>
+                    <Link href={"https://t.me/turungcommunity"} target="_blank">
+                      <FaTelegram className="h-10 w-10 ml-4" />
+                    </Link>
                   </div>
                 </div>
               </div>

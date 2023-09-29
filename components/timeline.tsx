@@ -23,7 +23,7 @@ const Timeline = () => {
               </div>
             </div>
             <p className="mb-16 text-base text-center">
-              We have a clear road map for our tokens.
+              We have a clear road map for our token.
             </p>
           </div>
         </div>

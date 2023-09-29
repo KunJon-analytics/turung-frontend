@@ -10,11 +10,8 @@ const Usecase = () => {
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
             <h2 className="h2 mb-4">Our Usecases and Tokenomics</h2>
             <p className="text-xl">
-              We have a wonderful roadmap and tokenomics policies.{" "}
-              <span className="text-sm text-secondary">
-                Less than 1% of the total token supply will be sold before the
-                launch
-              </span>
+              We have mapped out a clear roadmap as well as an effective
+              tokenomics
             </p>
           </div>
           {/* CTA box */}
