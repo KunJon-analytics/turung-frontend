@@ -73,15 +73,6 @@ export default function MobileMenu() {
         <ul className="px-4 py-2 text-primary">
           <li>
             <Link
-              href="/"
-              className="flex font-medium w-full py-2 justify-center"
-              onClick={() => setMobileNavOpen(false)}
-            >
-              Explore
-            </Link>
-          </li>
-          <li>
-            <Link
               href="/docs/whitepaper.pdf"
               target="_blank"
               rel="noopener noreferrer"

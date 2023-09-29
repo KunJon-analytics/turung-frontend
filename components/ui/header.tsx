@@ -25,14 +25,6 @@ export default function Header() {
             <ul className="flex grow text-primary justify-end flex-wrap items-center">
               <li>
                 <Link
-                  href="/"
-                  className="font-medium px-4 py-3 flex items-center transition duration-150 ease-in-out"
-                >
-                  Explore
-                </Link>
-              </li>
-              <li>
-                <Link
                   href="/docs/whitepaper.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
