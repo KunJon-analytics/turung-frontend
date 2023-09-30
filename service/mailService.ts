@@ -11,7 +11,7 @@ export async function sendMail(subject: string, body: string) {
 
   let mailOptions = {
     from: process.env.NODEMAILER_EMAIL,
-    to: process.env.TURUNG_EMAIL,
+    to: process.env.NODEMAILER_EMAIL,
     subject,
     text: body,
   };

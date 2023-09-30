@@ -1,5 +1,17 @@
 import type { Metadata } from "next";
 
+import Hero from "@/components/hero";
+import Features from "@/components/features";
+import Zigzag from "@/components/zigzag";
+import About from "@/components/about";
+import Usecase from "@/components/usecase";
+import Community from "@/components/community";
+import Team from "@/components/team";
+import Timeline from "@/components/timeline";
+import Contact from "@/components/contact";
+
+const { BASE_URL } = process.env;
+
 export const metadata: Metadata = {
   title: "Turung",
   description: "The future of E-commerce is now!!!",
@@ -23,7 +35,7 @@ export const metadata: Metadata = {
     "Tokenomics",
   ],
   creator: "KunJon",
-  metadataBase: new URL(BASE_URL),
+  metadataBase: new URL(BASE_URL as string),
   openGraph: {
     title: "Turung",
     description: "The future of E-commerce is now!!!",
@@ -33,17 +45,6 @@ export const metadata: Metadata = {
     type: "website",
   },
 };
-
-import Hero from "@/components/hero";
-import Features from "@/components/features";
-import Zigzag from "@/components/zigzag";
-import About from "@/components/about";
-import Usecase from "@/components/usecase";
-import Community from "@/components/community";
-import Team from "@/components/team";
-import Timeline from "@/components/timeline";
-import Contact from "@/components/contact";
-import { BASE_URL } from "@/utils/constants";
 
 export default function Home() {
   return (
