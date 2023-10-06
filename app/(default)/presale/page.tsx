@@ -18,15 +18,15 @@ const PresalePage = () => {
           <h2 className="mb-6 font-sans mt-5 text-3xl text-primary font-bold tracking-tight sm:text-4xl">
             Presale Stage 1
           </h2>
+          <Timer />
           {address || isConnected ? (
             <>
-              <Timer />
               <Progress />
               <Statistic />
               <Exchange />
             </>
           ) : (
-            <div className="flex justify-center">
+            <div className="flex justify-center mt-10">
               <ConnectButton />
             </div>
           )}

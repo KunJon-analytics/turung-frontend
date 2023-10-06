@@ -1,20 +1,44 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { useContractRead } from "wagmi";
 
-import presaleContract from "../contracts/TokenPreSale.sol/TokenPreSale.json";
-import { PRESALE_CONTRACT } from "@/contracts/addresses";
-import Error from "./ui/error";
+import { presaleId } from "@/contracts/addresses";
+import client from "@/service/publicProvider";
+import { presaleContract } from "./presale/buy-with-bnb";
 
 const Timer = () => {
-  const { data, isError, isLoading } = useContractRead({
-    address: PRESALE_CONTRACT,
-    abi: presaleContract.abi,
-    functionName: "presale",
-    args: [BigInt(1)],
-    watch: false,
-  });
+  const [data, setData] =
+    useState<
+      [
+        `0x${string}`,
+        bigint,
+        bigint,
+        bigint,
+        bigint,
+        bigint,
+        bigint,
+        bigint,
+        bigint,
+        bigint,
+        bigint,
+        bigint
+      ]
+    >();
+  const [isLoading, setisLoading] = useState(true);
+
+  useEffect(() => {
+    const getPresale = async () => {
+      const data = await client.readContract({
+        ...presaleContract,
+        functionName: "presale",
+        args: [presaleId],
+      });
+      setData(data);
+      setisLoading(false);
+    };
+
+    getPresale();
+  }, []);
 
   // The state for our timer
   const [timer, setTimer] = useState({
@@ -60,10 +84,6 @@ const Timer = () => {
 
   if (isLoading || !data) {
     return <span className="loading loading-spinner loading-lg"></span>;
-  }
-
-  if (isError) {
-    return <Error message="An error occured while fetching the presale" />;
   }
 
   return (

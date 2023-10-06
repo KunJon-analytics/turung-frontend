@@ -1,8 +1,12 @@
+"use client";
+
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 
 import FeatImage01 from "@/public/images/zigzag.svg";
 
 export default function Zigzag() {
+  const router = useRouter();
   return (
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -81,7 +85,10 @@ export default function Zigzag() {
                       </svg>
                       <span>Process Crypto-Fiat Liquidity</span>
                     </li>
-                    <button className="px-4 mt-2 py-2 text-gray-100 bg-primary rounded-md dark:hover:bg-primary-focus hover:bg-primary-focus">
+                    <button
+                      onClick={() => router.push("/presale")}
+                      className="px-4 mt-2 py-2 text-gray-100 bg-primary rounded-md dark:hover:bg-primary-focus hover:bg-primary-focus"
+                    >
                       Buy TXPR
                     </button>
                   </ul>
