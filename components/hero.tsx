@@ -1,4 +1,4 @@
-import CTAForm from "./cta-form";
+import Timer from "./timer";
 
 export default function Hero() {
   return (
@@ -57,7 +57,7 @@ export default function Hero() {
             </p>
             <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
               <div data-aos="fade-up" data-aos-delay="400">
-                <CTAForm />
+                <Timer />
               </div>
             </div>
           </div>
