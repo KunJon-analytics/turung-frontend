@@ -13,20 +13,28 @@ import {
   ledgerWallet,
 } from "@rainbow-me/rainbowkit/wallets";
 import { configureChains, createConfig, WagmiConfig } from "wagmi";
-import {
-  mainnet,
-  polygon,
-  bsc,
-  celo,
-  avalanche,
-  arbitrum,
-  base,
-} from "wagmi/chains";
+import { bsc, bscTestnet } from "wagmi/chains";
 import { publicProvider } from "wagmi/providers/public";
+import { jsonRpcProvider } from "wagmi/providers/jsonRpc";
 
 const { chains, publicClient, webSocketPublicClient } = configureChains(
-  [mainnet, polygon, bsc, arbitrum, base, celo, avalanche],
-  [publicProvider()]
+  [
+    bsc,
+    ...(process.env.NEXT_PUBLIC_ENABLE_TESTNETS === "true" ? [bscTestnet] : []),
+  ],
+  [
+    jsonRpcProvider({
+      rpc: (chain) => ({
+        http: `https://bsc.getblock.io/${process.env.NEXT_PUBLIC_RPC_URL_KEY}/${
+          chain.id === 97 ? "testnet" : "mainnet"
+        }/`,
+        webSocket: `wss://bsc.getblock.io/${
+          process.env.NEXT_PUBLIC_RPC_URL_KEY
+        }/${chain.id === 97 ? "testnet" : "mainnet"}/`,
+      }),
+    }),
+    publicProvider(),
+  ]
 );
 
 const projectId = "0933d1cdb15d3db4aadbacb031ad2879";
@@ -72,7 +80,9 @@ export function Providers({ children }: React.PropsWithChildren) {
         theme={darkTheme({
           ...darkTheme.accentColors.purple,
         })}
-        initialChain={mainnet}
+        initialChain={
+          process.env.NEXT_PUBLIC_ENABLE_TESTNETS === "true" ? bscTestnet : bsc
+        }
       >
         {mounted && children}
       </RainbowKitProvider>

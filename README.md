@@ -51,7 +51,13 @@ Before you begin, ensure you have met the following requirements:
 
    - `NODEMAILER_EMAIL`: Your email address for configuring Nodemailer.
    - `NODEMAILER_PW`: Your [Google App password](https://myaccount.google.com/apppasswords) for Nodemailer. This is required if you are using a Gmail account for sending emails.
-   - `BASE_URL`: The base url for the website.
+   - `NEXT_PUBLIC_BASE_URL`: The base url for the website.
+   - `NEXT_PUBLIC_ENABLE_TESTNETS`: Enable testnet for the app (true/false).
+   - `NEXT_PUBLIC_PRESALE_CONTRACT`: Presale contract address.
+   - `NEXT_PUBLIC_TXPR_CONTRACT`: TXPR token contract address.
+   - `NEXT_PUBLIC_USDT_CONTRACT`: USDT token contract address.
+   - `NEXT_PUBLIC_ACTIVE_PRESALE`: Active presale ID.
+   - `NEXT_PUBLIC_RPC_URL_KEY`: Node RPC url key from [GetBlocks](https://account.getblock.io/).
 
 ### Running the App
 

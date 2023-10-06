@@ -84,6 +84,15 @@ export default function MobileMenu() {
           </li>
           <li>
             <Link
+              href="/presale"
+              className="flex font-medium w-full py-2 justify-center"
+              onClick={() => setMobileNavOpen(false)}
+            >
+              Presale
+            </Link>
+          </li>
+          <li>
+            <Link
               target="_blank"
               href="https://t.me/turungcommunity"
               className="flex font-medium w-full py-2 justify-center"

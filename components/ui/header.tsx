@@ -35,6 +35,14 @@ export default function Header() {
               </li>
               <li>
                 <Link
+                  href="/presale"
+                  className="font-medium px-4 py-3 flex items-center transition duration-150 ease-in-out"
+                >
+                  Presale
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="https://t.me/turungcommunity"
                   target="_blank"
                   className="font-medium px-4 py-3 flex items-center transition duration-150 ease-in-out"

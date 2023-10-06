@@ -10,7 +10,7 @@ import Team from "@/components/team";
 import Timeline from "@/components/timeline";
 import Contact from "@/components/contact";
 
-const { BASE_URL } = process.env;
+const { NEXT_PUBLIC_BASE_URL } = process.env;
 
 export const metadata: Metadata = {
   title: "Turung",
@@ -35,11 +35,11 @@ export const metadata: Metadata = {
     "Tokenomics",
   ],
   creator: "KunJon",
-  metadataBase: new URL(BASE_URL as string),
+  metadataBase: new URL(NEXT_PUBLIC_BASE_URL),
   openGraph: {
     title: "Turung",
     description: "The future of E-commerce is now!!!",
-    url: BASE_URL,
+    url: NEXT_PUBLIC_BASE_URL,
     siteName: "Turung",
     locale: "en_US",
     type: "website",
