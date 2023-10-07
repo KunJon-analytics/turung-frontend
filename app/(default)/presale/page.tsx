@@ -1,13 +1,13 @@
 "use client";
 
 import React from "react";
+import { useAccount } from "wagmi";
+import { ConnectButton } from "@rainbow-me/rainbowkit";
 
 import Exchange from "@/components/presale/exchange";
 import Progress from "@/components/presale/progress";
 import Statistic from "@/components/presale/statistic";
 import Timer from "@/components/timer";
-import { useAccount } from "wagmi";
-import { ConnectButton } from "@rainbow-me/rainbowkit";
 
 const PresalePage = () => {
   const { address, isConnected } = useAccount();

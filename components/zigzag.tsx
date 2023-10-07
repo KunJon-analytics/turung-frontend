@@ -40,11 +40,11 @@ export default function Zigzag() {
                   <h3 className="h2 mb-3 text-primary">
                     Sales don’t have to be difficult!
                   </h3>
-                  <p className="text-xl mb-4">
+                  <p className="text-lg lg:text-xl mb-4">
                     Streamline Your Business with Our Cutting-Edge Crypto
                     Payment Processing Solutions
                   </p>
-                  <ul className="text-lg -mb-2">
+                  <ul className="text:md lg:text-lg -mb-2">
                     <li className="flex items-center mb-2">
                       <svg
                         className="w-3 h-3 fill-current text-green-700 mr-2 shrink-0"

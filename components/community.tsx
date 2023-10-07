@@ -34,7 +34,7 @@ const Community = () => {
               >
                 <div className="md:pr-4 lg:pr-12 xl:pr-16">
                   <h3 className="h2 mb-3 text-primary">Join our community</h3>
-                  <p className="text-xl mb-4">
+                  <p className="text-md lg:text-xl mb-4">
                     Join project community and be amongst the first to get a
                     free smartstore.
                   </p>
@@ -43,16 +43,16 @@ const Community = () => {
                       href={"https://twitter.com/turungcommunity"}
                       target="_blank"
                     >
-                      <FaTwitter className="h-10 w-10" />
+                      <FaTwitter className="h-8 w-8 lg:h-10 lg:w-10" />
                     </Link>
                     <Link
                       href={"https://www.linkedin.com/company/turung"}
                       target="_blank"
                     >
-                      <FaLinkedin className="h-10 w-10 ml-4" />
+                      <FaLinkedin className="h-8 w-8 lg:h-10 lg:w-10 ml-4" />
                     </Link>
                     <Link href={"https://t.me/turungcommunity"} target="_blank">
-                      <FaTelegram className="h-10 w-10 ml-4" />
+                      <FaTelegram className="h-8 w-8 lg:h-10 lg:w-10 ml-4" />
                     </Link>
                   </div>
                 </div>

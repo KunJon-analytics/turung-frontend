@@ -17,7 +17,7 @@ const Feature = ({ title, description, icon, delay }: Props) => {
     >
       {icon}
       <h4 className="h4 mb-2">{title}</h4>
-      <p className="text-lg text-center">{description}</p>
+      <p className="text:md lg:text-lg text-center">{description}</p>
     </div>
   );
 };

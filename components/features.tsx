@@ -9,7 +9,7 @@ export default function Features() {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
             <h2 className="h2 mb-4 text-primary">Benefits</h2>
-            <p className="text-xl">
+            <p className="text:md lg:text-xl">
               In a consumer-driven world, blending traditional businesses with a
               Turung smart store unleashes superpowers, transforming them into
               mini-banks with many benefits including:
@@ -25,19 +25,25 @@ export default function Features() {
               title="Customers"
               description="Build and manage customer base more efficiently."
               delay="200"
-              icon={<FaPeopleArrows className="w-16 h-16 mb-4 text-primary" />}
+              icon={
+                <FaPeopleArrows className="w-12 lg:w-16 h-12 lg:h-16 mb-4 text-primary" />
+              }
             />
             <Feature
               title="Cross Platforms"
               description="Accept both crypto and fiat for products and services."
               delay="0"
-              icon={<FaExchangeAlt className="w-16 h-16 mb-4 text-primary" />}
+              icon={
+                <FaExchangeAlt className="w-12 lg:w-16 h-12 lg:h-16 mb-4 text-primary" />
+              }
             />
             <Feature
               title="Rewards"
               description="Get rewards to process crypto fiat liquidity."
               delay="100"
-              icon={<FaWallet className="w-16 h-16 mb-4 text-primary" />}
+              icon={
+                <FaWallet className="w-12 lg:w-16 h-12 lg:h-16 mb-4 text-primary" />
+              }
             />
           </div>
         </div>

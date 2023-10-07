@@ -11,7 +11,7 @@ const Usecase = () => {
             <h2 className="h2 mb-4 text-primary">
               Our Usecases and Tokenomics
             </h2>
-            <p className="text-xl">
+            <p className="text:md lg:text-xl">
               We have mapped out a clear roadmap as well as an effective
               tokenomics
             </p>
