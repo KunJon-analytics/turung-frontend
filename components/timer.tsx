@@ -105,7 +105,9 @@ const Timer = () => {
                 ></span>
               </span>
             </div>
-            <div className="font-mono uppercase text-sm leading-none">Days</div>
+            <div className="font-mono uppercase text-xs lg:text-sm leading-none">
+              Days
+            </div>
           </div>
           <div className="w-16 lg:w-24 mx-1 p-2 bg-primary text-primary-content rounded-lg">
             <div className="font-mono leading-none">
@@ -115,7 +117,7 @@ const Timer = () => {
                 ></span>
               </span>
             </div>
-            <div className="font-mono uppercase text-sm leading-none">
+            <div className="font-mono uppercase text-xs lg:text-sm leading-none">
               Hours
             </div>
           </div>
@@ -127,11 +129,11 @@ const Timer = () => {
                 ></span>
               </span>
             </div>
-            <div className="font-mono uppercase text-sm leading-none">
+            <div className="font-mono uppercase text-xs lg:text-sm leading-none">
               Minutes
             </div>
           </div>
-          <div className="text-2xl mx-1 font-extralight">and</div>
+          <div className="text-2xl mx-1 font-extralight">&</div>
           <div className="w-16 lg:w-24 mx-1 p-2 bg-primary text-primary-content rounded-lg">
             <div className="font-mono leading-none">
               <span className="countdown font-mono text-4xl lg:text-5xl">
@@ -140,7 +142,7 @@ const Timer = () => {
                 ></span>
               </span>
             </div>
-            <div className="font-mono uppercase text-sm leading-none">
+            <div className="font-mono uppercase text-xs lg:text-sm leading-none">
               Seconds
             </div>
           </div>
