@@ -1,12 +1,15 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 import { presaleId } from "@/contracts/addresses";
 import client from "@/service/publicProvider";
 import { presaleContract } from "./presale/buy-with-bnb";
 
 const Timer = () => {
+  const pathname = usePathname();
   const [data, setData] =
     useState<
       [
@@ -87,36 +90,72 @@ const Timer = () => {
   }
 
   return (
-    <div className="grid grid-flow-col justify-center gap-5 text-center auto-cols-max">
-      <div className="flex flex-col p-2 bg-primary rounded-box text-primary-content">
-        <span className="countdown font-mono text-2xl lg:text-5xl">
-          <span style={{ "--value": timer.days } as React.CSSProperties}></span>
-        </span>
-        days
-      </div>
-      <div className="flex flex-col p-2 bg-primary rounded-box text-primary-content">
-        <span className="countdown font-mono text-2xl lg:text-5xl">
-          <span
-            style={{ "--value": timer.hours } as React.CSSProperties}
-          ></span>
-        </span>
-        hours
-      </div>
-      <div className="flex flex-col p-2 bg-primary rounded-box text-primary-content">
-        <span className="countdown font-mono text-2xl lg:text-5xl">
-          <span
-            style={{ "--value": timer.minutes } as React.CSSProperties}
-          ></span>
-        </span>
-        min
-      </div>
-      <div className="flex flex-col p-2 bg-primary rounded-box text-primary-content">
-        <span className="countdown font-mono text-2xl lg:text-5xl">
-          <span
-            style={{ "--value": timer.seconds } as React.CSSProperties}
-          ></span>
-        </span>
-        sec
+    <div className="flex items-center justify-center px-5 py-5">
+      <div className="">
+        <h1 className="text-2xl text-center mb-3 font-extralight">
+          TXPR tokens presale ends*
+        </h1>
+        <div className="text-6xl text-center flex w-full items-center justify-center">
+          <div className="text-2xl mr-1 font-extralight">in</div>
+          <div className="w-16 lg:w-24 mx-1 p-2 bg-primary text-primary-content rounded-lg">
+            <div className="font-mono leading-none">
+              <span className="countdown font-mono text-4xl lg:text-5xl">
+                <span
+                  style={{ "--value": timer.days } as React.CSSProperties}
+                ></span>
+              </span>
+            </div>
+            <div className="font-mono uppercase text-sm leading-none">Days</div>
+          </div>
+          <div className="w-16 lg:w-24 mx-1 p-2 bg-primary text-primary-content rounded-lg">
+            <div className="font-mono leading-none">
+              <span className="countdown font-mono text-4xl lg:text-5xl">
+                <span
+                  style={{ "--value": timer.hours } as React.CSSProperties}
+                ></span>
+              </span>
+            </div>
+            <div className="font-mono uppercase text-sm leading-none">
+              Hours
+            </div>
+          </div>
+          <div className="w-16 lg:w-24 mx-1 p-2 bg-primary text-primary-content rounded-lg">
+            <div className="font-mono leading-none">
+              <span className="countdown font-mono text-4xl lg:text-5xl">
+                <span
+                  style={{ "--value": timer.minutes } as React.CSSProperties}
+                ></span>
+              </span>
+            </div>
+            <div className="font-mono uppercase text-sm leading-none">
+              Minutes
+            </div>
+          </div>
+          <div className="text-2xl mx-1 font-extralight">and</div>
+          <div className="w-16 lg:w-24 mx-1 p-2 bg-primary text-primary-content rounded-lg">
+            <div className="font-mono leading-none">
+              <span className="countdown font-mono text-4xl lg:text-5xl">
+                <span
+                  style={{ "--value": timer.seconds } as React.CSSProperties}
+                ></span>
+              </span>
+            </div>
+            <div className="font-mono uppercase text-sm leading-none">
+              Seconds
+            </div>
+          </div>
+        </div>
+        {pathname !== "/presale" && (
+          <p className="text-sm text-center mt-3">
+            *
+            <Link
+              href="/presale"
+              className="underline text-primary hover:text-primary-focus"
+            >
+              Buy Now
+            </Link>
+          </p>
+        )}
       </div>
     </div>
   );
