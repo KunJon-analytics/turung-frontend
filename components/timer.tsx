@@ -1,8 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { usePathname } from "next/navigation";
-import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 
 import { presaleId } from "@/contracts/addresses";
 import client from "@/service/publicProvider";
@@ -10,6 +9,7 @@ import { presaleContract } from "./presale/buy-with-bnb";
 
 const Timer = () => {
   const pathname = usePathname();
+  const router = useRouter();
   const [data, setData] =
     useState<
       [
@@ -148,15 +148,14 @@ const Timer = () => {
           </div>
         </div>
         {pathname !== "/presale" && (
-          <p className="text-sm text-center mt-3">
-            *
-            <Link
-              href="/presale"
-              className="underline text-primary hover:text-primary-focus"
-            >
-              Buy Now
-            </Link>
-          </p>
+          <button
+            className="btn btn-neutral rounded text-center mt-5"
+            onClick={() => {
+              router.push("/presale");
+            }}
+          >
+            Buy Now
+          </button>
         )}
       </div>
     </div>

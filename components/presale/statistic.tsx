@@ -5,6 +5,7 @@ import { useContractRead, useAccount } from "wagmi";
 import {
   FaCoins,
   FaDollarSign,
+  FaRocket,
   FaShoppingCart,
   FaUnlock,
 } from "react-icons/fa";
@@ -32,30 +33,48 @@ const Statistic = () => {
     args: [address as `0x${string}`],
     watch: false,
   });
+  const { data: tokenBought } = useContractRead({
+    ...presaleContract,
+    functionName: "userVesting",
+    args: [address as `0x${string}`, presaleId],
+    watch: false,
+  });
+
+  console.log({ tokenBought });
 
   return (
-    <div className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-12">
-      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+    <>
+      <div className="stats stats-vertical lg:stats-horizontal shadow mt-5">
         <StatCard
           value="$0.07"
-          icon={<FaDollarSign className="w-8 h-8 text-primary-content" />}
+          icon={FaDollarSign}
           title="Presale Price"
-          description="Early bird pricing: Grab tokens at a discount!"
+          description="Grab tokens at a discount!"
         />
         <StatCard
           value="$0.20"
-          icon={<FaShoppingCart className="w-8 h-8 text-primary-content" />}
+          icon={FaRocket}
           title="Launch Price"
-          description="Tokens available at standard launch price."
+          description="Standard launch price."
         />
+        {tokenBought && (
+          <StatCard
+            value={`${humanNumber(Number(formatEther(tokenBought[0])))}`}
+            icon={FaShoppingCart}
+            title="Tokens Bought"
+            description="Tokens bought during presale"
+          />
+        )}
+      </div>
+      <div className="stats stats-vertical lg:stats-horizontal shadow mb-5">
         {claimableAmount && Boolean(Number(claimableAmount)) ? (
           <ClaimAction claimableAmount={claimableAmount} />
         ) : (
           <StatCard
             value={"0"}
-            icon={<FaUnlock className="w-8 h-8 text-primary-content" />}
-            title="Claimable Tokens"
-            description="Unlock your tokens after presale purchase."
+            icon={FaUnlock}
+            title="Unlocked Tokens"
+            description="Claim your tokens."
           />
         )}
         <StatCard
@@ -64,12 +83,12 @@ const Statistic = () => {
               ? `${humanNumber(Number(formatEther(tokenBalance)))}`
               : "0"
           }
-          icon={<FaCoins className="w-8 h-8 text-primary-content" />}
+          icon={FaCoins}
           title="Token Balance"
-          description="See how many tokens are in your wallet."
+          description="Your TXPR balance"
         />
       </div>
-    </div>
+    </>
   );
 };
 
